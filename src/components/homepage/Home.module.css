@@ -1,0 +1,96 @@
+@import "../../../Color.css";
+
+.home-right-section {
+  width: 100%;
+  max-width: 845px;
+  overflow: auto;
+  scrollbar-width: none;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+}
+
+.home-right-choosenSkills {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-right-choosenSkills h3 {
+  color: #3c4852;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.choosen-slider slick-slider,
+.recomm-slider slick-slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.choosen-slider slick-list,
+.recomm-slider slick-list {
+  position: relative;
+  display: block !important;
+  width: 100%;
+}
+
+.choosen-slider slick-slide,
+.recomm-slider slick-slide {
+  width: auto;
+  margin-right: 10px;
+}
+
+.choosen-slider img,
+.recomm-slider img {
+  width: calc(100% - 10px) !important;
+}
+
+/* .choosen-slider slick-prev,
+.choosen-slider slick-next {
+    z-index: 999 !important;
+}
+
+.choosen-slider slick-prev {
+    left: 25px !important;
+}
+
+.choosen-slider slick-next {
+    right: 25px !important;
+} */
+
+@media (min-width: 768px) {
+  .line {
+    display: block;
+  }
+}
+
+.line {
+  margin: 2rem 0;
+  border-bottom-width: 1px;
+  flex-grow: 1;
+  border: 0.001em solid rgba(221, 230, 237, 1);
+}
+
+.home-right-recommSkills {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-right-recommSkills h3 {
+  color: #3c4852;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.home-footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}

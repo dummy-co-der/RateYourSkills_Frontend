@@ -1,0 +1,62 @@
+@import "../../../Color.css";
+
+.benefit {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--secondary-color);
+}
+
+.benefit_content {
+  margin: 0 7rem;
+  font-size: large;
+}
+
+.benefit_head {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--color3);
+  /* font-family: cursive; */
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.benefit_heading p {
+  text-align: center;
+}
+
+.benefit_card_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.benefit_point {
+  display: flex;
+  flex-direction: row;
+  width: 48%;
+}
+
+.benefit_card_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.benefit_card_content {
+  margin-left: 0.6rem;
+}
+
+.benefit_card_content_head {
+  margin-bottom: 0;
+  color: var(--color3);
+}

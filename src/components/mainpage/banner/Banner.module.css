@@ -1,0 +1,127 @@
+@import "../../../App.css";
+@import "../../../Color.css";
+
+.Banner {
+  background-color: var(--background-color);
+  position: relative;
+}
+
+.navbar_container{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(#000,transparent);
+}
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+  padding-right: 48px;
+}
+
+.navbar_links a {
+  cursor: pointer;
+  padding: 24px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all .3s;
+  color: var(--primary-color);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.navbar_links a:hover {
+  color: var(--heading-color);
+}
+
+.banner_down {
+  background-color: var(--background-color);
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.banner_content {
+  margin: 0 7rem;
+  display: flex;
+}
+
+.banner_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.content_head {
+  color: var(--heading-color);
+}
+
+.content_para {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: large;
+  margin: 0 2rem;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  font-size: large;
+  font-weight: bold;
+}
+
+.rate a {
+  margin: 0 1rem;
+  text-decoration: none;
+  transition: 0.5s ease;
+  color: var(--heading-color);
+}
+
+.rate div {
+  width: 1px;
+  height: 30px;
+  background-color: var(--heading-color);
+}
+
+.items {
+  color: var(--heading-color) !important;
+  font-weight: bold;
+}
+
+.banner_right {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  flex: 0 0 auto;
+  width: 33.3%;
+}
+
+.overlay_laptop {
+  content: "";
+  position: absolute;
+  background: url(/banner-images/bgoverlay.png) 0 0 repeat;
+  width: 410px;
+  background-repeat: repeat-y;
+  height: 25000px;
+  background-size: 400px;
+  top: 0;
+  right: 0;
+  animation-duration: 2500s;
+  animation-name: moveBg;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}

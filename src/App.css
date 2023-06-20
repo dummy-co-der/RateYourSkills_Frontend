@@ -1,0 +1,14 @@
+/* section {
+  min-height: 50vh;
+  background-color: red;
+  color: black;
+} */
+
+@keyframes moveBg {
+  from {
+    top: 0px;
+  }
+  to {
+    top: -250000px;
+  }
+}

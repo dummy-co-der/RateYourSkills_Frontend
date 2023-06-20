@@ -1,0 +1,137 @@
+@import "../../../Color.css";
+
+.login {
+  background: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  color: var(--tertiary-color);
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25em;
+  height: 85vh;
+  margin-bottom: 3rem;
+  /* background-color: rgb(255, 255, 255); */
+  background-color: #eee;
+  border-radius: 25px;
+}
+
+.loginContainer h1 {
+  color: var(--primary-color);
+}
+
+.input_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.input_container input {
+  height: 1.5em;
+  width: 15em;
+  border-radius: 15px;
+  border-width: 15px;
+  border: var(--secondary-color);
+  box-shadow: 0 0 6px rgb(166, 159, 255);
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  .loginContainer {
+    height: 60vh;
+  }
+
+  .loginContainer h1 {
+    margin-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .loginContainer {
+    height: 70vh;
+  }
+
+  .loginContainer h1 {
+    margin-top: 3rem;
+  }
+}
+
+input:focus {
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset,
+    0 0 16px rgb(125, 115, 255);
+  outline: 0 none;
+}
+
+.forget_password a {
+  color: rgb(0, 68, 255);
+  font-weight: 500;
+  margin: 6px;
+  cursor: pointer;
+}
+
+.loginBut {
+  height: 4em;
+  width: 24em;
+  margin: 10px;
+  margin-top: 25px;
+  border-radius: 15px;
+  /* background: linear-gradient(rgb(124, 114, 255), rgb(255, 116, 116)); */
+  background: var(--primary-color);
+  border: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.loginBut:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+}
+
+.loginBut p {
+  color: var(--secondary-color);
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+.siG {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  height: 4em;
+  width: 24em;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(152, 145, 255);
+  border-width: 3px;
+  border-style: dashed;
+  transition: all 0.2s ease-in-out;
+}
+
+.siG:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+  cursor: pointer;
+}
+
+.siG p {
+  font-size: 20px;
+}
+
+.login_footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}

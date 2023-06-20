@@ -22,21 +22,21 @@ export default function Banner() {
   return (
     <div className={styles.Banner}>
       <div className={styles.navbar_container}>
-          <img src="/rys-images/rys-logo.png" style={{width: '328px', paddingLeft: '48px', paddingTop: '20px'}} />
+        <img
+          src="/rys-images/rys-logo.png"
+          style={{ width: "328px", paddingLeft: "48px", paddingTop: "20px" }}
+        />
         <div className={styles.navbar_links}>
-          <a href="/login">
-            Log In / Register
-          </a>
-          <a href="/demo">
-            Request a demo
-          </a>
+          <a href="/login">Log In / Register</a>
+          <a href="/demo">Request a demo</a>
         </div>
       </div>
       <div className={styles.banner_down}>
         <div className={styles.banner_content}>
           <div className={styles.banner_left}>
             <h1>
-              Mission to <span className={styles.content_head} ref={typedRef}></span>
+              Mission to
+              <span className={styles.content_head} ref={typedRef}></span>
             </h1>
             <p className={styles.content_para}>
               RateYourSkills is a skill assessment platform used to upgrade,
@@ -63,5 +63,4 @@ export default function Banner() {
       </div>
     </div>
   );
-};
-
+}

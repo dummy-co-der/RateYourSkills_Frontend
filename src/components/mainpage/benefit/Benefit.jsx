@@ -3,7 +3,7 @@ import styles from "./Benefit.module.css";
 import BenefitData from "../../../data/BenefitData";
 import { motion } from "framer-motion";
 
-export default function Benefit () {
+export default function Benefit() {
   const benefitRef = useRef(null);
   const [isVisible, setIsVisible] = useState(false);
   const container = {
@@ -74,7 +74,9 @@ export default function Benefit () {
                 <img src={item.image} alt="image" className={styles.img} />
               </div>
               <div className={styles.benefit_card_content}>
-                <h3 className={styles.benefit_card_content_head}>{item.header}</h3>
+                <h3 className={styles.benefit_card_content_head}>
+                  {item.header}
+                </h3>
                 <p style={{ marginTop: "0" }}>{item.subject}</p>
               </div>
             </motion.div>
@@ -83,5 +85,4 @@ export default function Benefit () {
       </div>
     </div>
   );
-};
-
+}

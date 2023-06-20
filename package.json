@@ -23,7 +23,9 @@
     "redux-thunk": "^2.4.2",
     "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.16",
-    "validator": "^13.9.0"
+    "validator": "^13.9.0",
+    "vite-plugin-svgr": "^3.2.0",
+    "vite-tsconfig-paths": "^4.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",

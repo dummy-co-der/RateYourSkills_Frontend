@@ -1,0 +1,68 @@
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";  
+
+export default class AutoPlay extends Component {
+    render() {
+      const settings = {
+        dots: false,
+        infinite: false,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "responsive",
+        responsive: [
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                initialSlide: 1,
+                autoplay: true,
+                arrows: false,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                initialSlide: 1,
+                autoplay: true,
+                arrows: false,
+              },
+            },
+        ]
+      };
+      return (
+        <div>
+          <h2>Auto Play</h2>
+          <Slider {...settings}>
+            <div>
+              <h3>1</h3>
+            </div>
+            <div>
+              <h3>2</h3>
+            </div>
+            <div>
+              <h3>3</h3>
+            </div>
+            <div>
+              <h3>4</h3>
+            </div>
+            <div>
+              <h3>5</h3>
+            </div>
+            <div>
+              <h3>6</h3>
+            </div>
+          </Slider>
+        </div>
+      );
+    }
+  }
+  
+

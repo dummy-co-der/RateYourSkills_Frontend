@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Mainpage from "./Mainpage";
 
-export const Root = () => {
+export default function Root () {
   return (
     <div className="App">
       <Router>

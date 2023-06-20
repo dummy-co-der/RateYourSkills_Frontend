@@ -6,17 +6,6 @@ import android from "/footer-images/appstoreAndroid.png";
 
 export default function Footer() {
   return (
-    // <div className={styles.footer}>
-    //   <div className={styles.footer_social}>
-    //     <FiLinkedin />
-    //     <FiInstagram />
-    //     <FiMail />
-    //   </div>
-    //   <div className={styles.footer_copyright}>
-    //     &copy; 2023 RateYourSkills. All Right Reserved.
-    //   </div>
-    // </div>
-
     <div className={styles.footer}>
       <div className={styles.footer_content}>
         <div className={styles.footer_up}>

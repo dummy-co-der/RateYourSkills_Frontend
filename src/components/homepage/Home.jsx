@@ -54,12 +54,11 @@ const Home = () => {
         </div>
         <div>
           <div className="skills-navbar-user-icon">
-            {" "}
             <FaUser
               size={30}
               color="#9E11A8"
               onClick={() => setOpen(!open)}
-            />{" "}
+            />
           </div>
           {/* <img src={usericon} alt="user icon"/> */}
           {open && (
@@ -128,12 +127,11 @@ const Home = () => {
                 <a href="/#">
                   <div className="selected-test">
                     <p className="selected-test-heading">
-                      {" "}
-                      Python Programming Test{" "}
+                      Python Programming Test
                     </p>
                     <p className="selected-test-content">
-                      {" "}
-                      CTC up to 8 LPA • 1000+ Jobs{" "}
+                      
+                      CTC up to 8 LPA • 1000+ Jobs
                     </p>
                   </div>
                 </a>
@@ -143,12 +141,12 @@ const Home = () => {
                 <a href="/#">
                   <div className="first-test">
                     <p className="first-test-heading">
-                      {" "}
-                      Java Programming Test{" "}
+                      
+                      Java Programming Test
                     </p>
                     <p className="first-test-content">
-                      {" "}
-                      CTC up to 8 LPA • 1000+ Jobs{" "}
+                      
+                      CTC up to 8 LPA • 1000+ Jobs
                     </p>
                   </div>
                 </a>
@@ -158,12 +156,12 @@ const Home = () => {
                 <a href="/#">
                   <div className="first-test">
                     <p className="first-test-heading">
-                      {" "}
-                      Ruby Programming Test{" "}
+                      
+                      Ruby Programming Test
                     </p>
                     <p className="first-test-content">
-                      {" "}
-                      CTC up to 8 LPA • 1000+ Jobs{" "}
+                      
+                      CTC up to 8 LPA • 1000+ Jobs
                     </p>
                   </div>
                 </a>

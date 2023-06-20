@@ -4,8 +4,6 @@
   width: 100%;
   color: var(--color3);
   background-color: var(--background-color);
-  /* position: relative; */
-  /* z-index: 1; */
 }
 
 .footer_content {
@@ -107,6 +105,8 @@
   cursor: pointer;
 }
 
-.down_heading_one:hover, .down_heading_two:hover, .down_heading_last:hover {
+.down_heading_one:hover,
+.down_heading_two:hover,
+.down_heading_last:hover {
   color: var(--color3);
 }

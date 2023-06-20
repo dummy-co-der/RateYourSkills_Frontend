@@ -39,62 +39,66 @@ export const Log = () => {
   };
 
   return (
-      <div className={styles.login}>
-        <div className={styles.loginContainer}>
-          <h1> Welcome Back! </h1>
-          {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
-          <div className={styles.input_container}>
-            <label> Email ID </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={email}
-              onChange={(e) => {
-                validateEmail(e);
-                setEmail(e.target.value);
-              }}
-              required
-            />
-            <span style={{ width: "300px", textAlign: "center", color: "red" }}>
-              {emailError}
-            </span>
-            {/* {renderErrorMessage("uname")} */}
-          </div>
-          <div className={styles.input_container}>
-            <label>Password </label>
-            <input
-              onChange={(e) => {
-                setPassword(e.target.value);
-              }}
-              value={password}
-              type="password"
-            />
-          </div>
-
-          <div className={styles.forget_password}>
-            <Link to="/forget"> Forget password? </Link>
-            <Link to="/register"> Create a new account </Link>
-          </div>
-
-          <button type="submit" onClick={handlesubmit} className={styles.loginBut}>
-            <p>Login</p>
-          </button>
-
-          <button className={styles.siG}>
-            <img
-              src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
-              alt="Trees"
-              height="30"
-            />
-            <p> Sign in with Google </p>
-          </button>
+    <div className={styles.login}>
+      <div className={styles.loginContainer}>
+        <h1> Welcome Back! </h1>
+        {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
+        <div className={styles.input_container}>
+          <label> Email ID </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={email}
+            onChange={(e) => {
+              validateEmail(e);
+              setEmail(e.target.value);
+            }}
+            required
+          />
+          <span style={{ width: "300px", textAlign: "center", color: "red" }}>
+            {emailError}
+          </span>
+          {/* {renderErrorMessage("uname")} */}
         </div>
-        <div className={styles.login_footer}>
-          <Footer />
+        <div className={styles.input_container}>
+          <label>Password </label>
+          <input
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            value={password}
+            type="password"
+          />
         </div>
+
+        <div className={styles.forget_password}>
+          <Link to="/forget"> Forget password? </Link>
+          <Link to="/register"> Create a new account </Link>
+        </div>
+
+        <button
+          type="submit"
+          onClick={handlesubmit}
+          className={styles.loginBut}
+        >
+          <p>Login</p>
+        </button>
+
+        <button className={styles.siG}>
+          <img
+            src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+            alt="Trees"
+            height="30"
+          />
+          <p> Sign in with Google </p>
+        </button>
       </div>
+      <div className={styles.login_footer}>
+        <Footer />
+      </div>
+    </div>
   );
-}
+};
 
 export default Log;

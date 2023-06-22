@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./Carousel.module.css";
-import { CarouselData } from "../../../Data/CarouselData";
+import { CarouselData } from "../../../data/CarouselData";
 import { FiAward } from "react-icons/fi";
 
 export default function Carousel() {

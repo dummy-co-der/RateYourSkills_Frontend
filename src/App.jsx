@@ -1,13 +1,10 @@
 import "./App.css";
-// import Root from "./pages/Route";
-import Mainpage from "./pages/Mainpage";
-// import Root from "./Pages/Route";
+import Root from "./pages/Route";
 
 function App() {
   return (
     <div className="App">
-      {/* <Root /> */}
-      <Mainpage />
+      <Root />
     </div>
   );
 }

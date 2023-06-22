@@ -55,7 +55,7 @@ export default function Video() {
               src="https://www.youtube.com/embed/lo6wzEPfCrg"
               allow="autoplay:encrypted-media"
               allowFullScreen
-              style={{ width: "600px", height: "280px" }}
+              style={{ width: "600px", height: "320px" }}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 100 }}
               transition={{ duration: 0.6 }}

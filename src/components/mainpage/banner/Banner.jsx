@@ -35,8 +35,7 @@ export default function Banner() {
         <div className={styles.banner_content}>
           <div className={styles.banner_left}>
             <h1>
-              Mission to
-              <span className={styles.content_head} ref={typedRef}></span>
+              Mission to <span className={styles.content_head} ref={typedRef}></span>
             </h1>
             <p className={styles.content_para}>
               RateYourSkills is a skill assessment platform used to upgrade,

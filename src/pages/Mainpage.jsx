@@ -15,12 +15,9 @@ function Mainpage() {
       <Video />
       <ChooseUs />
       <Benefit />
-
-      {/* <Benefit /> */}
       <section>
         <Carousel />
       </section>
-      {/* <ChooseUs /> */}
       {/* <Faq /> */}
       <Footer />
     </div>

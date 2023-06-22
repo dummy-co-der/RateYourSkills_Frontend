@@ -9,7 +9,7 @@ export default function Root() {
       <Router>
         <Routes>
           <Route path="/" element={<Mainpage />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="login" element={<Login />} />
         </Routes>
       </Router>
     </div>

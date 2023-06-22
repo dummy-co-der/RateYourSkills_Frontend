@@ -1,6 +1,8 @@
 @import "../../../Color.css";
 
 .carousel {
+  /* margin-right: 5rem;
+  margin-left: 5rem; */
   background-color: var(--primary-color);
   display: flex;
   align-items: center;
@@ -29,7 +31,7 @@
 
 .mainpage_carousel {
   margin-top: 2rem;
-  width: 200vh;
+  width: 180vh;
   height: 40vh;
 }
 

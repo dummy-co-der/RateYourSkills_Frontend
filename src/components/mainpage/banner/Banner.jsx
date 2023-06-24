@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import styles from "./Banner.module.css";
 import Typed from "typed.js";
-
+import { Link } from "react-router-dom";
 export default function Banner() {
   const typedRef = useRef(null);
 
@@ -27,7 +27,7 @@ export default function Banner() {
           style={{ width: "328px", paddingLeft: "48px", paddingTop: "20px" }}
         />
         <div className={styles.navbar_links}>
-          <a href="/login">Log In / Register</a>
+          <Link href="/login">Log In / Register</Link>
           <a href="/demo">Request a demo</a>
         </div>
       </div>

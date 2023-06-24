@@ -10,7 +10,7 @@ import {
   FiMail,
 } from "react-icons/fi";
 
-export default function Login () {
+function Login () {
   const handleSignUp = () => {
     const container = document.querySelector(`.${styles.container}`);
     container.classList.add(styles["signup_mode"]);
@@ -141,3 +141,4 @@ export default function Login () {
     </div>
   );
 };
+export default Login;

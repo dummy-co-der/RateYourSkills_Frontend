@@ -27,7 +27,7 @@ export default function Banner() {
           style={{ width: "328px", paddingLeft: "48px", paddingTop: "20px" }}
         />
         <div className={styles.navbar_links}>
-          <Link href="/login">Log In / Register</Link>
+          <Link to="/login">Log In / Register</Link>
           <a href="/demo">Request a demo</a>
         </div>
       </div>

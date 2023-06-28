@@ -21,7 +21,6 @@
   color: var(--color3);
   text-transform: uppercase;
   font-size: 2rem;
-  /* font-family: cursive; */
 }
 
 .video_vid {
@@ -51,7 +50,8 @@
     width: 100%;
   }
   .video_container {
-    margin-left: -50%;
     margin-top: 2rem;
+    display: flex;
+    justify-content: center;
   }
 }

@@ -2,7 +2,7 @@ import styles from "./Card.module.css";
 import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 
-export default function Card({ imagen }) {
+export default function Card({ imagen, head, subject }) {
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
@@ -20,12 +20,8 @@ export default function Card({ imagen }) {
       onMouseLeave={() => setShown(false)}
     >
       <img src={imagen} alt="" />
-      <h2>Title</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p>
+      <h2> {head} </h2>
+      <p> {subject} </p>
       <div className={styles.btnn}>
         {/* <Button text="Demo" />
         <Button text="Code" /> */}

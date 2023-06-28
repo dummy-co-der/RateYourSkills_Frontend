@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import styles from "./Video.module.css";
 import { motion } from "framer-motion";
-
+import YouTube from "react-youtube";
 export default function Video() {
   const videoRef = useRef(null);
   const [isVisible, setVisible] = useState(false);
@@ -22,7 +22,13 @@ export default function Video() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const opts = {
+    width: "600",
+    height: "320",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
   return (
     <div className={styles.video} ref={videoRef}>
       <div className={styles.video_content}>
@@ -50,16 +56,13 @@ export default function Video() {
             skill gaps and setting goals for improvement.
           </motion.p>
           <div className={styles.video_container}>
-            <motion.iframe
-              title="rysVideo"
-              src="https://www.youtube.com/embed/lo6wzEPfCrg"
-              allow="autoplay:encrypted-media"
-              allowFullScreen
-              style={{ width: "600px", height: "320px" }}
+            <motion.div
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 100 }}
               transition={{ duration: 0.6 }}
-            ></motion.iframe>
+            >
+              <YouTube videoId="lo6wzEPfCrg" opts={opts} onReady={() => {}} />
+            </motion.div>
           </div>
         </div>
       </div>

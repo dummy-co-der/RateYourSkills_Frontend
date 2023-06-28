@@ -120,7 +120,7 @@
   background-size: 400px;
   top: 0;
   right: 0;
-  animation-duration: 2500s;
+  animation-duration: infinite;
   animation-name: moveBg;
   animation-timing-function: linear;
   animation-iteration-count: infinite;

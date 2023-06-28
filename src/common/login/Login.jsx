@@ -10,7 +10,7 @@ import {
   FiMail,
 } from "react-icons/fi";
 
-export default function Login () {
+function Login() {
   const handleSignUp = () => {
     const container = document.querySelector(`.${styles.container}`);
     container.classList.add(styles["signup_mode"]);
@@ -106,7 +106,8 @@ export default function Login () {
           <div className={styles.content}>
             <h3>New Here?</h3>
             <p>
-                Fuel Your Passion for Learning - Sign Up and Begin Your Educational Adventure!"
+              Fuel Your Passion for Learning - Sign Up and Begin Your
+              Educational Adventure!"
             </p>
             <button
               className={`btn transparent ${styles["sign-up-btn"]} ${styles.btn1}`}
@@ -122,7 +123,8 @@ export default function Login () {
           <div className={styles.content}>
             <h3>One of us?</h3>
             <p>
-                Unleash your potential with our comprehensive educational platform, one login away.
+              Unleash your potential with our comprehensive educational
+              platform, one login away.
             </p>
             <button
               className={`btn transparent ${styles["sign-in-btn"]} ${styles.btn1}`}
@@ -140,4 +142,5 @@ export default function Login () {
       </div>
     </div>
   );
-};
+}
+export default Login;
